@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title> Color Game</title>
+</head>
+
+<body>
+	<div class="box" id="menu-box">
+		<h4>Color Matching Game</h4>
+		<button id="start">Start</button>
+		<button id="reset">Reset</button>
+		<button id="check-high-score">High Score</button>
+		<button id="sound">Sound</button>
+		<button id="rules">Rules</button>
+		<button id="quit"> Quit</button>
+		<div class="display-score" id="display-score">
+			<p> current highest score</p>
+			<h1 id="display-highest-score">0</h1>
+			<button id="score-back"> Back </button>
+		</div>
+		<div class="display-game" id="display-game">
+			<div class="pop-up" id="pop-up"></div>
+			<div class="timer" id="timer"></div>
+			<div class="box-color" id="box-color"></div>
+			<p>Guess the color</p>
+			<h1> SCORE: <span id="score"> 0</span></h1>
+			<div class="duration" id="duration"></div>
+			<div class="choices">
+				<div class="user-options" data-color="red"></div>
+				<div class="user-options" data-color="blue"></div>
+				<div class="user-options" data-color="white"></div>
+				<div class="user-options" data-color="yellow"></div>
+				<div class="user-options" data-color="black"></div>
+				<div class="user-options" data-color="green"></div>
+			</div>
+			<div class="game-button-div">
+				<button id="hint"> Hint</button>
+				<button id="quit-game"> Quit</button>
+			</div>
+
+		</div>
+		<div class="display-sound" id="display-sound">
+			<h3> MUSIC </h3>
+			<label for="on"> <input type="radio" id="on" name="sound"> ON </label>
+			<label for="off"> <input type="radio" id="off" name="sound"> OFF </label>
+			<button id="sound-back"> Back </button>
+		</div>
+		<div class="display-rules" id="display-rules">
+			<h3>Game Rules </h3>
+			<p> A random color box will be guessed. <br /> You will have a set
+				of
+				color boxes displayed below it.<br> Use the color boxes options to pick a matching color to guess the
+				color.<br> Each correct guess
+				equals <b>
+					<span style="color: rgb(9, 71, 9);"> 5pts </span>, if you miss <span style="color: red;">-
+						5pts
+					</span> </b> will be deducted from your score.<br> The random color is within the color boxes
+				available. You will see an <b>hint button </b>below, you can use it at anytime to get an idea. </p>
+			<p> Your score is displayed at the top <br> You have limited time per round which you will see at the top.
+				<br> A quit button at the button of the screen to quite before time but your score will not be saved.<br>Your can check the high score in the menu options to see the current score and if you beat the highest score
+				<br> Each round last 2mins and color guesses is changed every 2 secs,,,, HOW FAST CAN YOU BE??? <BR><b> <span
+						style="color: black;"> GOOD LUCK!!!</span></b></p>
+			<button id="menu"> Back</button>
+			<div class="developer">
+				<p> This game is developed by Agbei Oluwashol. S</p>
+			</div>
+		</div>
+
+		<script src="main.js"></script>
+
+</html>
