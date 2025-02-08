@@ -6,6 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
 	<title> Color Game</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -17,17 +20,20 @@
 		<button id="sound">Sound</button>
 		<button id="rules">Rules</button>
 		<button id="quit"> Quit</button>
+		<div class="developer">
+			<p> This game is developed by Agbei Oluwashol. S</p>
+		</div>
 		<div class="display-score" id="display-score">
 			<p> current highest score</p>
 			<h1 id="display-highest-score">0</h1>
 			<button id="score-back"> Back </button>
 		</div>
 		<div class="display-game" id="display-game">
-			<div class="pop-up" id="pop-up"></div>
+			<div class="pop-up" id="pop-up"> hello woeld</div>
 			<div class="timer" id="timer"></div>
 			<div class="box-color" id="box-color"></div>
 			<p>Guess the color</p>
-			<h1> SCORE: <span id="score"> 0</span></h1>
+			<h1 id="final-score-text"> SCORE: <span id="score"> 0</span></h1>
 			<div class="duration" id="duration"></div>
 			<div class="choices">
 				<div class="user-options" data-color="red"></div>
@@ -61,15 +67,18 @@
 					</span> </b> will be deducted from your score.<br> The random color is within the color boxes
 				available. You will see an <b>hint button </b>below, you can use it at anytime to get an idea. </p>
 			<p> Your score is displayed at the top <br> You have limited time per round which you will see at the top.
-				<br> A quit button at the button of the screen to quite before time but your score will not be saved.<br>Your can check the high score in the menu options to see the current score and if you beat the highest score
-				<br> Each round last 2mins and color guesses is changed every 2 secs,,,, HOW FAST CAN YOU BE??? <BR><b> <span
-						style="color: black;"> GOOD LUCK!!!</span></b></p>
+				<br> A quit button at the button of the screen to quite before time but your score will not be
+				saved.<br>Your can check the high score in the menu options to see the current score and if you beat the
+				highest score
+				<br> Each round last 1min and color guesses is changed every 1.5 secs,,,, HOW FAST CAN YOU BE??? <BR><b>
+					<span style="color: black;"> GOOD LUCK!!!</span></b>
+			</p>
 			<button id="menu"> Back</button>
 			<div class="developer">
 				<p> This game is developed by Agbei Oluwashol. S</p>
 			</div>
 		</div>
 
-		<script src="main.js"></script>
+		<script src="index.js"></script>
 
 </html>

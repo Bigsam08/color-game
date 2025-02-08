@@ -88,7 +88,7 @@ start.onclick = () => {
 	/**
  * FUNCTION TO SET A 2 MINS TIMER FOR EACH GAME
  */
-	duration = 120;
+	duration = 60;
 	document.getElementById('duration').textContent = "GAME STARTS"; // Immediately reset to 120 seconds
 
 
@@ -113,6 +113,7 @@ start.onclick = () => {
 			popUp.textContent = 'GAME OVER!!!';
 			popUp.style.color = 'black';
 			popUp.style.visibility = 'visible';
+			document.getElementById('final-score-text').textContent = `FINAL SCORE: ${currentSCoreCount}`;
 
 
 			// check highest and store it
@@ -139,7 +140,7 @@ start.onclick = () => {
 		randomPicked = colors[Math.floor(Math.random() * colors.length)];
 		randomColor.style.borderColor = randomPicked;
 	}
-	colorInterval = setInterval(getRandomCOlor, 2000) // change random color every 2 seconds
+	colorInterval = setInterval(getRandomCOlor, 1500) // change random color every 1.5 seconds
 
 
 	/**
@@ -195,6 +196,7 @@ document.getElementById('quit-game').onclick = () => {
 	if (durationCount !== null) {
 		clearInterval(durationCount); // Stop any previous countdown
 	}
+	document.getElementById('final-score-text').textContent = '';
 
 }
 
