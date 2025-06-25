@@ -17,12 +17,6 @@ A fun and interactive color matching game built using traditional **HTML**, **CS
 
 ---
 
-## 📷 Screenshots
-
-> _(Optional: Add screenshots here showing the main menu, gameplay, and score view)_
-
----
-
 ## 🧠 How to Play
 
 1. Click **Start Game**.
